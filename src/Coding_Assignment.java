@@ -4,6 +4,7 @@ public class Coding_Assignment {
 	public static void main(String[] args) {
 		
 //		Problem 1.
+		System.out.println("***Problem 1 results***");
 //		parts a. and b.
 		int[] ages = {3, 9, 23, 64, 2, 8, 28, 93, 94};
 		
@@ -17,9 +18,10 @@ public class Coding_Assignment {
 		}
 		double averageAge = (double) sum / ages.length;
 		System.out.println("Average age: " + averageAge);
-		
+		System.out.println();
 		
 //		Problem 2:
+		System.out.println("***Problem 2 results***");
 		String[] names = {"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
 		
 //		part a.
@@ -36,6 +38,13 @@ public class Coding_Assignment {
 			listOfNames += name + " ";
 		}
 		System.out.println(listOfNames);
+		System.out.println();
+		
+//		Problem 3
+//		see PDF
+		
+//		Problem 4
+//		see PDF
 		
 //		Problem 5
 		int[] nameLengths = new int[names.length];
@@ -44,11 +53,56 @@ public class Coding_Assignment {
 		}
 		
 //		Problem 6
+		System.out.println("***Problem 6 results***");
 		sum = 0;
 		for (int nameLength : nameLengths) {
 			sum += nameLength;
 		}
 		System.out.println("Sum of name lengths: " + sum);
+		System.out.println();
+		
+//		Problem 7 test:
+		System.out.println("***Problem 7 test***");
+		System.out.println(repeatWordNTimes("Hello", 3));
+		System.out.println();
+		
+//		Problem 8 test:
+		System.out.println("***Problem 8 test***");
+		System.out.println(createFullName("Jonathan", "Wheeler"));
+		System.out.println();
+		
+//		Problem 9 test:
+		System.out.println("***Problem 9 test***");
+		int[] notGreater = {100}, isGreater = {100, 1};
+		System.out.println("Should return false: " + isSumGreaterThan100(notGreater));
+		System.out.println("Should return true: " + isSumGreaterThan100(isGreater));
+		System.out.println();
+		
+//		Problem 10 test:
+		System.out.println("***Problem 10 test***");
+		double[] doubleArray = {0.1, 2.3, 4.5, 6.7, 8.9};
+		System.out.println("Should return 4.5: " + average(doubleArray));
+		System.out.println();
+		
+//		Problem 11 test:
+		System.out.println("***Problem 11 test***");
+		double[] doubleArray1 = {0.1, 2.3}, doubleArray2 = {4.5, 6.7, 8.9};
+		System.out.println("Should return false: " + firstAverageGreaterThanSecond(doubleArray1, doubleArray2));
+		System.out.println("Should return true: " + firstAverageGreaterThanSecond(doubleArray2, doubleArray1));
+		System.out.println();
+		
+//		Problem 12 test:
+		System.out.println("***Problem 12 test***");
+		System.out.println("Shold return false: " + willBuyDrink(false, 10.5));
+		System.out.println("Shold return false: " + willBuyDrink(true, 10.5));
+		System.out.println("Shold return false: " + willBuyDrink(false, 10.6));
+		System.out.println("Shold return true: " + willBuyDrink(true, 10.6));
+		System.out.println();
+		
+//		Problem 12 test:
+		System.out.println("***Problem 13 test***");
+		System.out.println("Should return false: " + isPalindrome("test"));
+		System.out.println("Should return true: " + isPalindrome("racecar"));
 		
 	}
 	
@@ -111,6 +165,7 @@ public class Coding_Assignment {
 			}
 		}
 		return true;
+		
 	}
 	
 }
